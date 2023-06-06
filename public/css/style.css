@@ -1,0 +1,68 @@
+body{
+    background: linear-gradient(to bottom left,#E4E9FD ,#A683E3 );
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.box{
+    margin-top: 40px;
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.3);  
+}
+h1{
+    color: #E4E9FD;
+}
+#heading{
+    background-color: #A683E3;
+    text-align: center;
+}
+.item{
+    min-width: 70px;
+    display: flex;
+    border-bottom: 1px solid #F1F1F1;
+}
+.item:last-child{
+    border-bottom: 0;
+}
+input:checked+p{
+    text-decoration: line-through;
+    text-decoration-color:#A683E3 ;
+}
+input[type="checkbox"]{
+    margin: 20px;
+}
+p{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+    color: rgb(11, 24, 24);
+}
+form.item{ 
+    margin-left: 20px;
+}
+input[type="text"]{
+    text-align: center;
+    height: 60px;
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+    width: 313px;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+button{
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #A683E3;
+    color: #E4E9FD;
+    font-size: 30px;
+    margin: 3px;
+    cursor: pointer;
+}
