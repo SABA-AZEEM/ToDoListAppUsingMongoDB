@@ -97,7 +97,7 @@ app.post('/',(req,res)=>{
             if(data){
                 data.items.push(item);
                 data.save();
-                res.redirect('/'+headingName);
+                res.redirect('/+headingName');
             }
         })
     }
@@ -107,7 +107,7 @@ app.post('/',(req,res)=>{
 app.post("/delete",async(req,res)=>{
     const delItem=req.body.checkbox;
     const modelName=req.body.check;
-    if(modelName==="ToDay ToDoList"){
+    if(modelName==="ToDay"){
         const deleted = await Item.deleteOne({ _id: delItem });
         if (deleted) {
             res.redirect("/");
